@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PROJECT</title>
+</head>
+<body>
+<br/>
+<br/>
+<br/>
+    <div class="container">
+        
+        <form method="POST" action="/process">
+            <div class="form-group">
+            <label>Enter Your Query :</label>
+            <textarea type="text" rows="5" cols="100" class="form-control"  name="rawtext" required="true"></textarea>
+            <br/>
+            <p align="Left"><button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Submit</button></p>
+         
+        </div>
+        </form>
+    </div>
+	<div>
+		<div>
+        <p>Your Query</p>
+        	<li>{{query}}</li>
+    	</div>
+
+	
+    	<div>
+        <p>Intent</p>
+        	<li>{{intent}}</li>
+    	</div>
+		<div>
+        <p>Entity</p>
+        	<li>{{entity}}</li>
+    	</div>
+   
+    	<div>
+        <p>Result</p>
+        	<li>{{results}}</li>
+    	</div>
+    </div>
+    
+</body>
+</html>
